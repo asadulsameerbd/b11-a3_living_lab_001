@@ -26,36 +26,50 @@
                     colors: {
                         clifford: '#da373d',
                     }
-
                 }
+                fontFamily: {
+                    custom: ['sora', 'sans-serif'],
+                    custom1: ['ADLaM Display', 'sans-serif'],
+                },
             }
         }
     </script>
+
+    <style>
+        .btn {
+            background-color: #FFDC26;
+            color: #111111;
+            border-radius: 10px;
+            padding: 7px 20px;
+            font-family: sora;
+        }
+    </style>
 </head>
 
-<body>
+<body class="font-sora">
     <!-- Header Section start from here -->
     <header
-        class="flex justify-between lg:justify-evenly items-center px-5 py-2 border-b-2 border-yellow-300 lg:border-none">
+        class="flex justify-between lg:justify-evenly items-center px-5 py-2 border-b-2 border-yellow-300 lg:border-none bg-[#FFF9F4]">
         <!-- logo -->
         <div class="flex items-center">
             <img src="image/logo-header.png" alt="">
             <div class="hidden lg:block">
-                <h3 class="text-xl font-medium px-3 text-[#111111]" font-sans>Browse<span
+                <h3 class="text-xl font-sans font-semibold px-3 text-[#111111]" font-sans>Browse<span
                         class="text-[#FFDC26] font-sans">4</span>Pets</h3>
             </div>
         </div>
         <!-- navbar -->
-        <ul class="flex">
+        <ul class="lg:flex hidden">
             <li class="font-medium px-5"><a class="text-[#111111]" href="">Find a pet</a></li>
             <li class="font-medium px-5"><a class="text-[#111111]" href="">Breeds</a></li>
             <li class="font-medium px-5"><a class="text-[#111111]" href="">Contact us</a></li>
         </ul>
         <!-- Button & icon-->
-        <div>
-            <i class="fa-regular fa-bell"></i>
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <button class="btn">Register</button>
+        <div class="hidden lg:block">
+            <i class="fa-regular fa-bell px-3"></i>
+            <i class="fa-solid fa-magnifying-glass px-3"></i>
+            <button class="border-2 border-[#FFDC26] px-5 py-1 rounded-lg ">Login</button>
+            <button class="btn mx-2">Register</button>
         </div>
         <!-- Hamburger icon for mobile  -->
         <div class="items-center lg:hidden">
