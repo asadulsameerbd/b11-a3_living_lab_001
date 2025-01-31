@@ -5,4 +5,8 @@ module.exports = {
       extend: {},
     },
     plugins: [],
+    fontFamily:{
+      'ADLaM_Display': ["ADLaM Display", "serif"],
+      'sora': ["Sora", "serif"],
+  },
   }
